@@ -1,1 +1,1 @@
-# Nigerian-ICT-Law-Assistant-V2.0
+# Data-Governance-AI-Assistant
