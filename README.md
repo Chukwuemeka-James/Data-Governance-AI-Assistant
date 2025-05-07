@@ -128,8 +128,6 @@ The comprehensive research process underpinning this project is presented in
 | How does blockchain enhance data governance?        | By providing immutability, transparency, and auditability of data transactions, supporting verifiable and tamper-resistant governance.                   |
 | What is a Data Protection Impact Assessment (DPIA)? | A process to assess and mitigate data protection risks, especially when handling sensitive or large-scale personal data.                                 |
 
-More example Q\&As are available within the application interface.
-
 ---
 
 ## Contributing
