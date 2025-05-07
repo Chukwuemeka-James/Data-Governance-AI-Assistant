@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+langchain = "*"
+flask = "*"
+pypdf = "*"
+python-dotenv = "*"
+pinecone-client = {extras = ["grpc"], version = "*"}
+langchain-pinecone = "*"
+langchain-community = "*"
+langchain-experimental = "*"
+langchain-groq = "*"
+ipykernel = "*"
+sentence-transformers = ">=2.2.2"
+langchain-huggingface = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
