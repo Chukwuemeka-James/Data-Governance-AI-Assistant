@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Governance AI Assistant</title>
+</head>
+<body>
+    <h1>Welcome to the Data Governance AI Assistant</h1>
+
+    <fieldset>
+        <legend>Ask a Question about Data Governance</legend>
+
+        <label for="question">Your Question:</label><br>
+        <input type="text" id="question" placeholder="Type your question here"><br><br>
+
+        <button onclick="askQuestion()">Ask the Assistant</button>
+    </fieldset>
+
+    <h3>Assistant's Response:</h3>
+    <pre id="response">(Your response will appear here)</pre>
+
+<script>
+    async function askQuestion() {
+        const question = document.getElementById('question').value;
+        const responseDiv = document.getElementById('response');
+        
+        responseDiv.textContent = "Loading...";
+        
+        try {
+            const formData = new FormData();
+            formData.append('msg', question);
+            
+            const response = await fetch('put_your_modal_endpoint_here', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const text = await response.text();
+            responseDiv.textContent = text;
+        } catch (error) {
+            responseDiv.textContent = "Error: " + error.message;
+        }
+    }
+</script>
+
+</body>
+</html>
